@@ -27,9 +27,10 @@ $basketball_matches = [
         'AwayScores' => 53,
     ],
 ];
-
 // Print all matches in format: Home Team - Away Team | Home Scores - Away Scores
 for ($i = 0; $i < count($basketball_matches); $i++) {
-    echo $basketball_matches[$i]["HomeTeam"] . " - " . $basketball_matches[$i]["AwayTeam"] . " | " . $basketball_matches[$i]["HomeScores"] . " - " . $basketball_matches[$i]["AwayScores"] . "<br>";
+    $results = $basketball_matches[$i];
+    echo $results["HomeTeam"]." - ".$results["AwayTeam"]." | ".$results["HomeScores"]." - ".$results["AwayScores"]."<br>";
 }
+
 ?>
