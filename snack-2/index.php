@@ -1,4 +1,13 @@
 <?php
+//Set $default to init array key if key doesn't exist
+$default = [
+    "name" => "",
+    "age" => "",
+    "mail" => ""
+];
+//Set $_GET replacing values of the same keys from $default array
+$_GET = array_replace($default, $_GET);
+
 //Pass name, age and mail as GET parameters
 $user_name = trim($_GET['name']);
 $user_age = $_GET['age'];
